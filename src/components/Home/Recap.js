@@ -10,8 +10,8 @@ const Recap = () => {
       <p>One year ago you added...</p>
       <p>TIL how to declare a variable using three dumplings and one ice latte.</p>
       <div className="tags">
-        {recapTags.map((tag, index) => (
-          <span key={index} className="tag">{tag}</span>
+        {recapTags.map((rtag, index) => (
+          <span key={index} className="rtag">{rtag}</span>
         ))}
       </div>
     </div>
