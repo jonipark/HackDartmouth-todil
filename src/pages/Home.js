@@ -6,7 +6,7 @@ import Recap from '../components/Home/Recap';
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home nav-padding">
       <section className="welcome-section">
         <img src={homeBg} alt="Home background" style={{height: 800}}/>
         <div className="welcome-text">
