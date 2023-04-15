@@ -1,8 +1,11 @@
 import React from 'react';
 import './GemList.css';
 
-const GemList = ({ gems, searchTerm, onGemClick }) => {
-  const filteredGems = gems.filter(gem => gem.text.toLowerCase().includes(searchTerm.toLowerCase()));
+const GemList = ({ gems, searchTerm, selectedTags, onGemClick }) => {
+  const filteredGems = gems.filter(gem =>
+    gem.text.toLowerCase().includes(searchTerm.toLowerCase()) &&
+    (selectedTags.length === 0 || gem.tags.some(tag => selectedTags.includes(tag)))
+  );
 
   return (
     <div className="gem-list">

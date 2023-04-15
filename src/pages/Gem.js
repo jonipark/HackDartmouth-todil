@@ -15,6 +15,7 @@ const Gem = () => {
   ];
   const [selectedGem, setSelectedGem] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedTags, setSelectedTags] = useState([]);
 
   const handleGemClick = (gem) => {
     setSelectedGem(gem);
@@ -22,6 +23,14 @@ const Gem = () => {
 
   const handleSearchInput = (e) => {
     setSearchTerm(e.target.value);
+  };
+
+  const handleTagClick = (tag) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter(t => t !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
   };
 
   return (
@@ -36,10 +45,20 @@ const Gem = () => {
         />
         <div className='filter-container'>
           {tags.map((tag) => (
-            <div className="tag">{tag}</div>
+            <div
+              className={`tag ${selectedTags.includes(tag) ? ' selected' : ''}`}
+              onClick={() => handleTagClick(tag)}
+            >
+              {tag}
+            </div>
           ))}
         </div>
-        <GemList gems={gems} searchTerm={searchTerm} onGemClick={handleGemClick} />
+        <GemList
+          gems={gems}
+          searchTerm={searchTerm}
+          selectedTags={selectedTags}
+          onGemClick={handleGemClick}
+        />
       </div>
       <div className="right-side">
         {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor />}
