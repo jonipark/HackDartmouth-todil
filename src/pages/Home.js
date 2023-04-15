@@ -8,10 +8,11 @@ const Home = () => {
   return (
     <div className="home nav-padding">
       <section className="welcome-section">
-        <img src={homeBg} alt="Home background" />
+        <img src={homeBg} alt="Home background" style={{height: 800}}/>
         <div className="welcome-text">
-          <h1>Hey Sohee, What did you learn today?</h1>
-          <a className="add-block-btn" href="/gems">Add Block</a>
+          <h1>Hey Sohee, <br />
+            What did you learn today?</h1>
+          <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil">✎</span> Add Block</a>
         </div>
       </section>
       <section className="bottom-section">
