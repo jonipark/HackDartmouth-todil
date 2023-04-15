@@ -14,25 +14,27 @@
   
   .welcome-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 80%;
+    width: 700px;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+    text-align: left;
   }
   
   .add-block-btn {
-    background-color: #007bff;
+    background-color: #F4FF6B;
     border: none;
-    color: white;
+    color: #620FB3;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 5px 2px;
     cursor: pointer;
     border-radius: 5px;
+    width: 500px
   }
   
   .bottom-section {
@@ -40,4 +42,9 @@
     justify-content: space-around;
     padding: 20px;
   }
-  
+
+  .home h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F4FF6B;
+    font-size: 2.5rem;
+  }

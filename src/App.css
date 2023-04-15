@@ -5,3 +5,17 @@ body {
 .nav-padding {
     padding-left: 100px;
 }
+
+.flex {
+    display: flex;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}

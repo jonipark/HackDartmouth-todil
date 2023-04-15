@@ -1,6 +1,8 @@
 .insights {
-    background-color: #f8f9fa;
+    background-color: #EFEAFF;
     border-radius: 5px;
+    width: 650px;
+    height: 350px;
     padding: 20px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -8,6 +10,20 @@
 .insights h2 {
     margin-top: 0;
     margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #620FB3;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.insights h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #620FB3;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .insights ul {
@@ -18,4 +34,19 @@
 .insights li {
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+
+.insights p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #620FB3;
+    padding: 10px;
+    font-size: 1.1rem;
+
+}
+
+.column {
+    width: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
