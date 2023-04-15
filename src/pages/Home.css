@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .welcome-section {
+    position: relative;
+  }
+  
+  .welcome-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .add-block-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .bottom-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  

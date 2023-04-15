@@ -1,0 +1,30 @@
+.recap {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recap h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.recap p {
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
