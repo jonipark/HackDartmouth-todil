@@ -1,3 +1,13 @@
-.gem-container {
+.gem {
     display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-side {
+    flex: 4;
 }
