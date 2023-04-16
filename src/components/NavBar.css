@@ -104,3 +104,10 @@
 .nav-bar:hover .user-icon {
   display: none;
 }
+
+.icon-text-container img {
+  margin-top: 20%
+}
+
+
+
