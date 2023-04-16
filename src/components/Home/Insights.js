@@ -5,18 +5,18 @@ const Insights = () => {
   return (
     <div className="insights">
       <h2>Insights</h2>
-      <div className="flex space-btwn center">
-        <div className="column">
+      <div className="flex space-btw center pd-16">
+        <div className='insight-unit'>
           <h3>10</h3>
-          <p>Longest Streak</p>
+          <p>Longest<br/>Streak</p>
         </div>
-        <div className="column">
+        <div className='insight-unit'>
           <h3>5</h3>
-          <p>Current Streak</p>
+          <p>Current<br/>Streak</p>
         </div>
-        <div className="column">
+        <div className='insight-unit'>
           <h3>50</h3>
-          <p>Total Gems</p>
+          <p>Total<br/>Gems</p>
         </div>
       </div>
     </div>
