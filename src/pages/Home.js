@@ -9,24 +9,24 @@ const Home = () => {
   const [data, setData] = useState(null);
   const userId = 6;
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/home', {
-        headers: {
-          user_id: userId,
-          monthDiff: 12,
-        },
-      });
-      console.log(response.data);
-      setData(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await axios.get('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:443/api/v1/home', {
+  //       headers: {
+  //         user_id: userId,
+  //         monthDiff: 12,
+  //       },
+  //     });
+  //     console.log(response.data);
+  //     setData(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="home nav-padding">

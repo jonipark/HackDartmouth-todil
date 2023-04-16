@@ -70,7 +70,7 @@ const Digest = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/digests', {
+      const response = await fetch('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:443/api/v1/digests', {
         headers: {
           'user_id': userId,
           'start_date': '2023-04-15T00:00:00',
