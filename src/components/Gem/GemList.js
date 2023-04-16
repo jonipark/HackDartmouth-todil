@@ -4,7 +4,7 @@ import './GemList.css';
 const GemList = ({ gems, searchTerm, selectedTags, onGemClick }) => {
   const filteredGems = gems.filter(gem =>
     gem.text.toLowerCase().includes(searchTerm.toLowerCase()) &&
-    (selectedTags.length === 0 || gem.tags.some(tag => selectedTags.includes(tag)))
+    (selectedTags.length === 0 || gem.tags.some(tag => selectedTags.includes(tag.name)))
   );
 
   const reversedGems = filteredGems.reverse();
