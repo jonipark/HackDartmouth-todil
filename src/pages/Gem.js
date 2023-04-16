@@ -1,23 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Gem.css';
 import GemList from '../components/Gem/GemList';
 import GemEditor from '../components/Gem/GemEditor';
 import GemViewer from '../components/Gem/GemViewer';
 import searchIcon from '../assets/search.png'
+import axios from "axios";
 
 const Gem = () => {
-  const tags = ['react', 'react360', 'python', 'javascript'];
+  const tags = ['Java', 'XR', 'python', 'javascript'];
   const [allTags, setAllTags] = useState(tags);
 
-  const gems = [
-    { id: 1, text: 'Learned React', date: '2023-04-14', tags: ['react', 'react360'] },
-    { id: 2, text: 'Learned Python', date: '2023-04-13', tags: ['python'] },
-    { id: 3, text: 'Learned JavaScript', date: '2023-04-12', tags: ['javascript'] },
-    // Add more gems as needed
-  ];
   const [selectedGem, setSelectedGem] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTags, setSelectedTags] = useState([]);
+
+  const [gems, setGems] = useState(null);
+  const userId = 4
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/blocks', {
+        headers: {
+          user_id: userId,
+        },
+      });
+      console.log(response.data);
+      setGems(response.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handleGemClick = (gem) => {
     setSelectedGem(gem);
@@ -64,16 +80,16 @@ const Gem = () => {
             ))}
             </div>
             <div style={{marginTop: 40}}>
-                <GemList
+                {gems && <GemList
                     gems={gems}
                     searchTerm={searchTerm}
                     selectedTags={selectedTags}
                     onGemClick={handleGemClick}
-                />
+                />}
             </div>
         </div>
         <div className="right-side">
-            {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} />}
+            {selectedGem ? <GemViewer date={selectedGem.updateDate} tags={selectedGem.tags} text={selectedGem.text} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} />}
         </div>
     </div>
   );

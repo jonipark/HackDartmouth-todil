@@ -13,7 +13,7 @@ const GemList = ({ gems, searchTerm, selectedTags, onGemClick }) => {
         {filteredGems.map((gem) => (
           <li key={gem.id} onClick={() => onGemClick(gem)} className="gem-list-item">
             <div className="gem-list-text">{gem.text}</div>
-            <div className="gem-list-date">{new Date(gem.date).toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <div className="gem-list-date">{new Date(gem.updateDate).toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</div>
           </li>
         ))}
       </ul>

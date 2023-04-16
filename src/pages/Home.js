@@ -33,7 +33,7 @@ const Home = () => {
       <section className="welcome-section">
         <img src={homeBg} alt="Home background" />
         <div className="welcome-text">
-          <h1>Hey Sohee, <br />
+          <h1>Hey {data.block.user.first_name}, <br />
             What did you learn today?</h1>
           <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil">✎</span> Add Block</a>
         </div>
