@@ -5,43 +5,51 @@
   
   .left-side {
     flex: 1;
-    margin-right: 20px;
+    background-color: #F7F4FF;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .right-side {
-    flex: 4;
+    flex: 3.3;
   }
   
   .search-bar {
+    margin-top: 70px;
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #620FB3;
+    border-radius: 8px;
   }
   
   .filter-container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 26px;
     margin-bottom: 10px;
   }
   
-  .tag {
+  .filter-tag {
     padding: 4px 8px;
     margin-right: 8px;
     margin-bottom: 8px;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     user-select: none;
+    border: 1.5px solid #7858D2;
+    color: #7858D2;
   }
   
-  .tag:hover {
-    background-color: #ddd;
+  .filter-tag:hover {
+    background-color: #e7dffe;
   }
   
-  .tag.selected {
-    background-color: #f3c51e;
+  .filter-tag.selected {
+    background-color: #7858D2;
     color: #fff;
+    border: 1.5px solid transparent;
   }
   

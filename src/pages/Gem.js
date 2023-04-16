@@ -35,34 +35,40 @@ const Gem = () => {
 
   return (
     <div className="gem nav-padding">
-      <div className="left-side">
-        <input
-          type="text"
-          className="search-bar"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={handleSearchInput}
-        />
-        <div className='filter-container'>
-          {tags.map((tag) => (
-            <div
-              className={`tag ${selectedTags.includes(tag) ? ' selected' : ''}`}
-              onClick={() => handleTagClick(tag)}
-            >
-              {tag}
+        <div className="left-side">
+            <input
+                type="text"
+                className="search-bar"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={handleSearchInput}
+            />
+            <div className='filter-container'>
+            {tags.map((tag) => (
+                selectedTags.includes(tag) ?(
+                <div
+                    className='filter-tag selected'
+                    onClick={() => handleTagClick(tag)}>{tag}
+                </div>) : (
+                <div
+                    className='filter-tag'
+                    onClick={() => handleTagClick(tag)}>
+                {tag}
+                </div>)
+            ))}
             </div>
-          ))}
+            <div style={{marginTop: 40}}>
+                <GemList
+                    gems={gems}
+                    searchTerm={searchTerm}
+                    selectedTags={selectedTags}
+                    onGemClick={handleGemClick}
+                />
+            </div>
         </div>
-        <GemList
-          gems={gems}
-          searchTerm={searchTerm}
-          selectedTags={selectedTags}
-          onGemClick={handleGemClick}
-        />
-      </div>
-      <div className="right-side">
-        {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor />}
-      </div>
+        <div className="right-side">
+            {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor />}
+        </div>
     </div>
   );
 };
