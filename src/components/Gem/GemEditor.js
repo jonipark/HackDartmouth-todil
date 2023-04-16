@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './GemEditor.css';
 
-const GemEditor = ({ allTags, onNewTagAdded }) => {
+const GemEditor = ({ allTags, onNewTagAdded, onSaveGem }) => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [newTag, setNewTag] = useState('');
   const newTagInputRef = useRef(null);
@@ -34,7 +34,7 @@ const GemEditor = ({ allTags, onNewTagAdded }) => {
   };
 
   const handleSaveClick = () => {
-    // Call API to save the gem and then refresh the page
+    onSaveGem(gemText, selectedTags); // Call the saveGem function passed as a prop
     console.log('Gem saved:', { text: gemText, tags: selectedTags });
   };
 

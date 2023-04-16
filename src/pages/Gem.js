@@ -35,6 +35,26 @@ const Gem = () => {
     fetchData();
   }, []);
 
+  const saveGem = async (gemText, gemTags) => {
+    try {
+      const response = await axios.post('http://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/blocks', {
+        text: gemText,
+        tags: gemTags,
+        user_id: userId
+      });
+  
+      if (response.status === 201) {
+        console.log('Gem saved successfully');
+        fetchData(); // Refetch the data to update the gem list
+      } else {
+        console.error('Error saving gem:', response.status, response.statusText);
+      }
+    } catch (error) {
+      console.error('Error saving gem:', error);
+    }
+  };
+  
+
   const handleGemClick = (gem) => {
     setSelectedGem(gem);
   };
@@ -89,7 +109,7 @@ const Gem = () => {
             </div>
         </div>
         <div className="right-side">
-            {selectedGem ? <GemViewer date={selectedGem.updateDate} tags={selectedGem.tags} text={selectedGem.text} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} />}
+            {selectedGem ? <GemViewer date={selectedGem.updateDate} tags={selectedGem.tags} text={selectedGem.text} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} onSaveGem={saveGem}/>}
         </div>
     </div>
   );
