@@ -7,7 +7,7 @@ import axios from "axios";
 
 const Home = () => {
   const [data, setData] = useState(null);
-  const userId = 4
+  const userId = 6;
 
   const fetchData = async () => {
     try {
@@ -36,7 +36,7 @@ const Home = () => {
           { data && data.block.user ? <h1>Hey {data.block.user.first_name}, <br />
             What did you learn today?</h1> : <h1>Hey, <br />
             What did you learn today?</h1>}
-          <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil" style={{marginRight: "16px"}}>✎</span>Add Block</a>
+          <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil" style={{marginRight: "16px"}}>✎</span>Add Gem</a>
         </div>
       </section>
       {data && data.block && (<section className="bottom-section">

@@ -11,7 +11,7 @@ import Explore from './pages/Explore';
 
 function App() {
   const [userData, setUserData] = useState(null);
-  const userId = 4;
+  const userId = 6;
 
   useEffect(() => {
     const fetchUserData = async () => {

@@ -15,7 +15,7 @@ const Gem = () => {
   const [selectedTags, setSelectedTags] = useState([]);
 
   const [gems, setGems] = useState(null);
-  const userId = 4
+  const userId = 6;
 
   const fetchData = async () => {
     try {
