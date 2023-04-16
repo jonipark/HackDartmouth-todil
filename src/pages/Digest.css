@@ -1,0 +1,70 @@
+
+.digest-container {
+    height: 100vh
+}
+
+.top-digest-bar {
+    background-color: #620FB3;
+    height: 25%;
+    overflow: hidden
+}
+
+.top-digest-bar h2 {
+    padding-left: 2.5%;
+    color: #F4FF6B;
+}
+.digest {
+    margin-top: -50px;
+    width: 75%;
+    height: 70%;
+    background-color: #EFEAFF;
+    padding: 2%;
+}
+
+.back-btn {
+    float: left;
+    padding-left: 42%;
+}
+
+.fwd-btn {
+    float: right;
+    padding-right: 42%;
+}
+
+hr.line{
+    border-top: 2px solid #D6D2E2;
+  }
+
+.digest-gem-stats {
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.digest-motivation {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.digest-top-tags {
+    position: fixed;
+    bottom: 10%;
+    left: 25%;
+    background-color: #F4FF6B;
+    width: 13%;
+    height: 23%;
+    padding: 2%;
+
+
+}
+
+.digest-top-tags li {
+    text-align: left;
+}
+
+.digest-suggestions {
+    position: fixed;
+    bottom: 40%;
+    right: 25%;
+}
