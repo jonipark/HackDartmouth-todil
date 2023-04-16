@@ -17,9 +17,8 @@
 
 .explore {
     margin-top: -50px;
-    width: 60%;
+    width: 70%;
     height: 70%;
-    background-color: white;
     padding: 1%;
     position: relative;
 }
@@ -29,7 +28,7 @@
     overflow: auto;
     overflow-x: hidden;
     margin-right: 5%;
-    width: 90%
+    width: 100%
 }
 
 .egem-list-item {
@@ -37,7 +36,7 @@
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    border-radius: 5%;
+    border-radius: 8px;
 
 }
 
@@ -88,9 +87,9 @@
     background-color: #7858D2;
     color: white;
     padding: 6px;
-    border-radius: 3px;
+    border-radius: 25px;
     margin-right: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-bottom: 10px;
     font-size: .6rem;
     float: left
@@ -99,4 +98,5 @@
 .exp-items-time {
     float:right;
     padding-right: 5%;
+    font-size: .7rem;
 }
