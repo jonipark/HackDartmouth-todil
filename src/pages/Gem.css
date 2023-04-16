@@ -16,9 +16,9 @@
   }
 
   .search-bar {
-    margin-top: 70px;
+    margin-top: 60px;
     width: 100%;
-    padding: 8px 32px 8px 8px; /* Add padding to the right side */
+    padding: 12px 32px 12px 8px; /* Add padding to the right side */
     margin-bottom: 10px;
     box-sizing: border-box;
     border: 2px solid #620FB3;
@@ -32,7 +32,7 @@
   .search-icon {
     position: absolute;
     right: 14px; /* Adjust the position from the right */
-    margin-top: 87px;
+    margin-top: 82px;
     transform: translateY(-50%);
     width: 20px; /* Adjust the icon size as needed */
     height: 20px;
@@ -52,7 +52,7 @@
   
   .filter-tag {
     padding: 4px 8px;
-    margin-right: 6px;
+    margin-right: 12px;
     margin-bottom: 8px;
     border-radius: 8px;
     cursor: pointer;

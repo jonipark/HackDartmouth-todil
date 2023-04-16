@@ -88,35 +88,28 @@ const Gem = () => {
             />
             <img src={searchIcon} alt="search" className="search-icon" />
           </div>
-            {/* <input
-                type="text"
-                className="search-bar"
-                placeholder="Search..."
-                value={searchTerm}
-                onChange={handleSearchInput}
-            /> */}
-            <div className='filter-container'>
-            {tags.map((tag) => (
-                selectedTags.includes(tag) ?(
-                <div
-                    className='filter-tag selected'
-                    onClick={() => handleTagClick(tag)}>{tag}
-                </div>) : (
-                <div
-                    className='filter-tag'
-                    onClick={() => handleTagClick(tag)}>
-                {tag}
-                </div>)
-            ))}
-            </div>
-            <div style={{marginTop: 40}}>
-                {gems && <GemList
-                    gems={gems}
-                    searchTerm={searchTerm}
-                    selectedTags={selectedTags}
-                    onGemClick={handleGemClick}
-                />}
-            </div>
+          <div className='filter-container'>
+          {tags.map((tag) => (
+              selectedTags.includes(tag) ?(
+              <div
+                  className='filter-tag selected'
+                  onClick={() => handleTagClick(tag)}>{tag}
+              </div>) : (
+              <div
+                  className='filter-tag'
+                  onClick={() => handleTagClick(tag)}>
+              {tag}
+              </div>)
+          ))}
+          </div>
+          <div style={{marginTop: 40}}>
+            {gems && <GemList
+              gems={gems}
+              searchTerm={searchTerm}
+              selectedTags={selectedTags}
+              onGemClick={handleGemClick}
+            />}
+          </div>
         </div>
         <div className="right-side">
             {selectedGem ? <GemViewer date={selectedGem.updateDate} tags={selectedGem.tags} text={selectedGem.text} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} onSaveGem={saveGem}/>}

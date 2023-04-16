@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
 .gem-editor {
   background-color: #F7F4FF;
   padding: 40px;
@@ -24,13 +25,17 @@
 
 .gem-editor-tag {
   padding: 4px 8px;
-  margin-right: 6px;
+  margin-right: 12px;
   border-radius: 8px;
   cursor: pointer;
   user-select: none;
   color: #620FB3;
   border: 1px solid #620FB3;
 }
+.gem-editor-tag:hover {
+  background-color: #e7dffe;
+}
+
 
 .gem-editor-tag.selected {
   color: #eee;
@@ -66,7 +71,7 @@
   border: none;
   border-radius: 4px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #fdfcff;
   border-radius: 8px;
   outline: none;
@@ -74,6 +79,7 @@
   white-space: pre-wrap;
   overflow-wrap: break-word;
   vertical-align: top;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 

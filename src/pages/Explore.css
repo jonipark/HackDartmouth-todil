@@ -18,7 +18,7 @@
 .explore {
     margin-top: -50px;
     width: 70%;
-    height: 70%;
+    height: 80%;
     padding: 1%;
     position: relative;
 }
@@ -34,9 +34,7 @@
 .egem-list-item {
     background-color: #EFEAFF;
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-radius: 8px;
+    padding: 20px;
 }
 
 .exp-items-user {
@@ -48,13 +46,17 @@
 }
 
 .exp-items-name {
-    padding-left: 2%;
+    padding-left: 1%;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .exp-items-text {
+    margin-top: 12px;
+    font-size: 1.2rem;
     text-align: left;
     padding-left: 1%;
+    padding-right: 1%;
     padding-top: 1%;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -63,8 +65,8 @@
 }
 
 .exp-items-user img {
-    width: 5vh;
-    height: 5vh;
+    width: 4vh;
+    height: 4vh;
     border-radius: 50%;
 }
 
@@ -78,24 +80,23 @@
 }
 
 .exp-items-tag-time {
-    padding-top: 6px;
+    margin-top: 24px;
 }
 
 .exp-items-tags {
-
     background-color: #7858D2;
     color: white;
-    padding: 6px;
-    border-radius: 25px;
-    margin-right: 10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin-right: 4px;
     margin-left: 10px;
     margin-bottom: 10px;
-    font-size: .6rem;
+    font-size: 1rem;
     float: left
 }
 
 .exp-items-time {
     float:right;
     padding-right: 5%;
-    font-size: .7rem;
+    font-size: 0.8rem;
 }
