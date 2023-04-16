@@ -1,7 +1,9 @@
 import React from 'react'
 import './Digest.css'
 
-function Digest() {
+
+const Digest = () => {
+    const digestTags = ['javascript', 'python', 'react'];
 
     return (
         <div className='nav-padding digest-container'>
@@ -42,6 +44,11 @@ function Digest() {
 
                 <div className="digest-suggestions">
                     Something that may interest you...
+                    <div className="dtags">
+                        {digestTags.map((dtag, index) => (
+                        <span key={index} className="dtag">{dtag}</span>
+                        ))}
+                    </div>
                     <div className="interest-tags">
                     
                     </div>
@@ -49,7 +56,7 @@ function Digest() {
 
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Digest;
