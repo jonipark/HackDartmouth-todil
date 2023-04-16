@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/home', {
+      const response = await axios.get('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/home', {
         headers: {
           user_id: userId,
           monthDiff: 12,

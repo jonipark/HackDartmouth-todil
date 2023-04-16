@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('http://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080/api/v1/blocks', {
+        const response = await axios.get('http://us-east-2.compute.amazonaws.com:8080/api/v1/blocks', {
           headers: {
             user_id: userId,
           },
