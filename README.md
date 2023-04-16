@@ -1,71 +1,25 @@
-# Getting Started with Create React App
+## Inspiration
+The question of "What did you gain from your internship?" proved to be more challenging to answer than I initially thought. While I undoubtedly acquired knowledge, I couldn't pinpoint a specific “gem” of knowledge. As a result of this realization, I decided to start recording my daily learnings and created Todil, a tool that simplifies the process of documenting and organizing my entries, and helps me keep track of my ongoing education.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Todil empowers individuals to take control of their own learning and development by tracking their progress in daily learning, reminding them to prioritize their personal growth and skill-building. Todil has a unique recap and weekly digest feature that provides positive feedback and celebrates users' learning, reminding them to prioritize their personal growth and skill-building in a world where AI is increasingly prevalent.
 
-## Available Scripts
+## How we built it
+Our primary objective was to develop a framework that could meet the complex requirements of real-world industry applications. To achieve this, we approached the project with a focus on incorporating industry best practices and incorporating modern technology solutions.
 
-In the project directory, you can run:
+One of the key components of our framework is the RESTful API server, which we developed using the popular Spring Boot framework. We chose this technology for its flexibility, ease of use, and robust feature. Additionally, we deployed the API server to Amazon EC2, a scalable and reliable cloud infrastructure that can accommodate our framework's requirements as well as using Amazon RDS for our database.
 
-### `npm start`
+Another important aspect of our framework is its emphasis on providing a personalized experience for users. To accomplish this, we integrated the Open AI API into our platform. By leveraging the power of AI, we were able to generate insights and recommendations that are tailored to each user's unique preferences and behaviors. This approach enabled us to provide a more engaging and meaningful experience for users, ultimately resulting in higher engagement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Challenges we ran into
+Integrating a RESTful API with our local frontend development environment (blocked by CORS policy). We addressed this by setting up Access-Control in the Backend
+Deciding on the distribution of responsibilities between frontend and backend for various features
+Accomplishments that we're proud of
+We are proud of building a product focused on helping people prioritize their learning. Furthermore, we are proud of building a full stack web application using an industry level framework within 24 hours. Moreover, we successfully integrated ChatGPT to offer users inspiring messages in their Weekly Digest.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# HackDartmouth-todil
+## What we learned
+To design a modular and scalable product
+To determine a viable scope for the project given the time constraint
+What's next for Todil
+Enhance interaction in the Explore page with features like reactions and follow.
+Improve accessibility with mobile and desktop application and responsive web design
