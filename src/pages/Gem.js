@@ -19,7 +19,7 @@ const Gem = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:443/api/v1/blocks', {
+      const response = await axios.get('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8443/api/v1/blocks', {
         headers: {
           user_id: userId,
         },
@@ -37,7 +37,7 @@ const Gem = () => {
 
   const saveGem = async (gemText, gemTags) => {
     try {
-      const response = await axios.post('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:443/api/v1/blocks', {
+      const response = await axios.post('https://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8443/api/v1/blocks', {
         text: gemText,
         tags: gemTags,
         user_id: userId
