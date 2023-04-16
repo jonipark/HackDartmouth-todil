@@ -33,12 +33,13 @@ const Home = () => {
       <section className="welcome-section">
         <img src={homeBg} alt="Home background" />
         <div className="welcome-text">
-          <h1>Hey {data.block.user.first_name}, <br />
-            What did you learn today?</h1>
+          { data && data.block.user ? <h1>Hey {data.block.user.first_name}, <br />
+            What did you learn today?</h1> : <h1>Hey, <br />
+            What did you learn today?</h1>}
           <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil">✎</span> Add Block</a>
         </div>
       </section>
-      {data && (<section className="bottom-section">
+      {data && data.block && (<section className="bottom-section">
         <Insights longestStreak={data.longest_streak} currentStreak={data.current_streak} totalBlocks={data.total_blocks} />
         <Recap data={data.block} />
       </section>)}
