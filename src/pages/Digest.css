@@ -20,6 +20,7 @@
     height: 70%;
     background-color: #EFEAFF;
     padding: 2%;
+    border-radius: 8px;
 }
 
 .back-btn {
@@ -53,19 +54,38 @@ hr.line{
     bottom: 10%;
     left: 25%;
     background-color: #F4FF6B;
-    width: 13%;
+    width: 15%;
     height: 23%;
     padding: 2%;
-
-
+    font-weight: bold;
 }
 
 .digest-top-tags li {
     text-align: left;
+    font-weight: normal;
+    padding-bottom: 3%;
 }
 
 .digest-suggestions {
     position: fixed;
-    bottom: 40%;
+    bottom: 30%;
     right: 25%;
+}
+
+.dtags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: flex-end;
+    padding: 5%;
+}
+
+.dtag {
+    background-color: #7858D2;
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: .8rem;
 }

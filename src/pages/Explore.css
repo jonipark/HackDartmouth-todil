@@ -1,3 +1,9 @@
+.explore-container {
+    height: 100vh;
+    margin: 0; 
+    overflow: hidden
+}
+
 .top-explore-bar {
     background-color: #620FB3;
     height: 25%;
@@ -11,9 +17,86 @@
 
 .explore {
     margin-top: -50px;
-    width: 60%;
+    width: 70%;
     height: 70%;
-    background-color: white;
-    padding: 2%;
+    padding: 1%;
     position: relative;
+}
+
+.explore-items {
+    max-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-right: 5%;
+    width: 100%
+}
+
+.egem-list-item {
+    background-color: #EFEAFF;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 8px;
+
+}
+
+.exp-items-user {
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    align-items:center;
+}
+
+.exp-items-name {
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+.exp-items-text {
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.exp-items-user img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+.explore li {
+    float: left;
+    margin-bottom: 3%;
+}
+
+.explore ul {
+    list-style-type: none;
+}
+
+.exp-items-tag-time {
+    padding-top: 6px;
+}
+
+.exp-items-tags {
+
+    background-color: #7858D2;
+    color: white;
+    padding: 6px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: .6rem;
+    float: left
+}
+
+.exp-items-time {
+    float:right;
+    padding-right: 5%;
+    font-size: .7rem;
 }
