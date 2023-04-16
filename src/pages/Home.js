@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home nav-padding">
       <section className="welcome-section">
-        <img src={homeBg} alt="Home background" style={{height: 350}}/>
+        <img src={homeBg} alt="Home background" />
         <div className="welcome-text">
           <h1>Hey Sohee, <br />
             What did you learn today?</h1>
