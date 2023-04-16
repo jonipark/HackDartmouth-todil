@@ -2,11 +2,11 @@ import React from 'react';
 import './NavBar.css';
 import logo from '../assets/logo.png';
 import bigLogo from '../assets/big-logo.png';
-import homeIcon from '../assets/home-icon.png';
-import gemIcon from '../assets/gem-icon.png';
-import digestIcon from '../assets/digest-icon.png';
-import exploreIcon from '../assets/explore-icon.png';
-import userIcon from '../assets/user-icon.png';
+import homeIcon from '../assets/home.png';
+import gemIcon from '../assets/gem.png';
+import digestIcon from '../assets/stats.png';
+import exploreIcon from '../assets/globe.png';
+import userIcon from '../assets/person.png';
 
 const NavBar = () => {
   return (
