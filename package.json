@@ -2,7 +2,6 @@
   "name": "hackdartmouth-todil",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://ec2-3-141-106-245.us-east-2.compute.amazonaws.com:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
