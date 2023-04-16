@@ -1,16 +1,43 @@
 import React from 'react';
 import './NavBar.css';
+import logo from '../assets/logo.png';
+import bigLogo from '../assets/big-logo.png';
+import homeIcon from '../assets/home-icon.png';
+import gemIcon from '../assets/gem-icon.png';
+import digestIcon from '../assets/digest-icon.png';
+import exploreIcon from '../assets/explore-icon.png';
+import userIcon from '../assets/user-icon.png';
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar">
-      <ul>
-        <li><a href="/">🏠</a></li>
-        <li><a href="/gems">💎</a></li>
-        <li><a href="/digest">📈</a></li>
-        <li><a href="/explore">🌎</a></li>
-      </ul>
-    </nav>
+    <div className="nav-bar">
+      <img src={logo} alt="Logo" className="logo" />
+      <img src={bigLogo} alt="Big Logo" className="big-logo" />
+      <div className="nav-items">
+        <a href="/" className='icon-text-container'>
+          <img src={homeIcon} alt="Home" className="nav-icon" />
+          <span className="nav-text">Home</span>
+        </a>
+        <a href="/gems" className='icon-text-container'>
+          <img src={gemIcon} alt="Gems" className="nav-icon" />
+          <span className="nav-text">Gems</span>
+        </a>
+        <a href="/digest" className='icon-text-container'>
+          <img src={digestIcon} alt="Digest" className="nav-icon" />
+          <span className="nav-text">Digest</span>
+        </a>
+        <a href="/explore" className='icon-text-container'>
+          <img src={exploreIcon} alt="Explore" className="nav-icon" />
+          <span className="nav-text">Explore</span>
+        </a>
+      </div>
+      <div className="user-info">
+        <img src={userIcon} alt="User" className="nav-icon user-icon" />
+        <div className="nav-divider"></div>
+        <span className="user-info-text">Username</span>
+        <span className="user-info-text">User email</span>
+      </div>
+    </div>
   );
 };
 
