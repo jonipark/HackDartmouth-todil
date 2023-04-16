@@ -1,14 +1,40 @@
-.tags {
+.gem-viewer {
+    background-color: #F7F4FF;
+    padding: 40px;
+    width: 84%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+  
+  .gem-viewer-date {
+    font-size: 14px;
+    color: #777;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+  }
+  
+  .gem-viewer-tags {
+    margin-top: 28px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-}
-
-.tag {
-    background-color: #620FB3;
-    color: white;
-    border-radius: 3px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
+  }
+  
+  .gem-viewer-tag {
+    padding: 4px 8px;
+    margin-right: 6px;
+    border-radius: 8px;
+    user-select: none;
+    background-color: #7858D2;
+    color: #fff;
+  }
+  
+  .gem-viewer-text {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  

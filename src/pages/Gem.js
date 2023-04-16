@@ -3,9 +3,11 @@ import './Gem.css';
 import GemList from '../components/Gem/GemList';
 import GemEditor from '../components/Gem/GemEditor';
 import GemViewer from '../components/Gem/GemViewer';
+import searchIcon from '../assets/search.png'
 
 const Gem = () => {
   const tags = ['react', 'react360', 'python', 'javascript'];
+  const [allTags, setAllTags] = useState(tags);
 
   const gems = [
     { id: 1, text: 'Learned React', date: '2023-04-14', tags: ['react', 'react360'] },
@@ -31,6 +33,10 @@ const Gem = () => {
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
+  };
+
+  const handleNewTagAdded = (newTag) => {
+    setAllTags([...allTags, newTag]);
   };
 
   return (
@@ -67,7 +73,7 @@ const Gem = () => {
             </div>
         </div>
         <div className="right-side">
-            {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor />}
+            {selectedGem ? <GemViewer gem={selectedGem} /> : <GemEditor allTags={allTags} onNewTagAdded={handleNewTagAdded} />}
         </div>
     </div>
   );
