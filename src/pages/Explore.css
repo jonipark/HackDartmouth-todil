@@ -51,12 +51,17 @@
 
 .exp-items-name {
     padding-left: 2%;
+    font-weight: bold;
 }
 
 .exp-items-text {
     text-align: left;
     padding-left: 1%;
     padding-top: 1%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .exp-items-user img {
@@ -80,7 +85,7 @@
 
 .exp-items-tags {
 
-    background-color: #620FB3;
+    background-color: #7858D2;
     color: white;
     padding: 6px;
     border-radius: 3px;
@@ -92,8 +97,6 @@
 }
 
 .exp-items-time {
-    color: black;
-    padding: 10%;
-
-
+    float:right;
+    padding-right: 5%;
 }

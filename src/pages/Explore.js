@@ -5,11 +5,11 @@ import homeBg from '../assets/home-bg.png';
 
 
 const Explore = () => {
-    const exploreItems = [{userImg: 1, username: "Karina", eText: "TIL how to swim", eTags: "Java", timeAgo: "2min"},
-    {userImg: 2, username: "Joni", eText: "TIL how to swim", eTags: "Java", timeAgo: "3min"},
-    {userImg: 3, username: "Sohee", eText: "TIL how to swim", eTags: "Java", timeAgo: "5min"},
-    {userImg: 5, username: "anon-person", eText: "TIL how to swim", eTags: "Java", timeAgo: "10min"},
-    {userImg: 6, username: "anon-persontwo", eText: "TIL how to swim", eTags: "Java", timeAgo: "11min"}]
+    const exploreItems = [{userImg: 1, username: "Karina", eText: "TIL how to swim and cook some very delicious food using cheese and pasta and eggs and bacon and broccoli and spinach and many ingredients that I can purchase at the grocery store", eTags: ["Java"], timeAgo: "2min"},
+    {userImg: 2, username: "Joni", eText: "TIL how to swim", eTags: ["Java", "python", "life"], timeAgo: "3min"},
+    {userImg: 3, username: "Sohee", eText: "TIL how to swim", eTags: ["Java"], timeAgo: "5min"},
+    {userImg: 5, username: "anon-person", eText: "TIL how to swim", eTags: ["blockchain", "Java"], timeAgo: "10min"},
+    {userImg: 6, username: "anon-persontwo", eText: "TIL how to swim", eTags: ["Java"], timeAgo: "11min"}]
 
     return (
         <div className='nav-padding explore-container'>
@@ -29,11 +29,14 @@ const Explore = () => {
                             </div>
                             
                             <div className="exp-items-text">{item.eText}</div>
-
+                            
                             <div className="exp-items-tag-time">
-                                <span className="exp-items-tags">{item.eTags}</span>
-                                <span className="exp-items-time">{item.time}</span>
+                                {item.eTags.map((eTag) => (
+                                <span className="exp-items-tags">{eTag}</span>
+                                ))}
+                                <span className="exp-items-time">{item.timeAgo}</span>
                             </div>
+
                         </li>
                         ))}
                     </ul>
