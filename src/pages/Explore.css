@@ -1,0 +1,19 @@
+.top-explore-bar {
+    background-color: #620FB3;
+    height: 25%;
+    overflow: hidden
+}
+
+.top-explore-bar h2 {
+    padding-left: 2.5%;
+    color: #F4FF6B;
+} 
+
+.explore {
+    margin-top: -50px;
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    padding: 2%;
+    position: relative;
+}
