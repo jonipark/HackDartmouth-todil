@@ -31,7 +31,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 5px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -45,7 +44,6 @@
   }
 
   .home h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #F4FF6B;
     font-size: 1.8rem;
   }

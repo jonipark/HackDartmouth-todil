@@ -78,13 +78,23 @@ const Gem = () => {
   return (
     <div className="gem nav-padding">
         <div className="left-side">
+          <div className="search-container">
             <input
+              type="text"
+              className="search-bar"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={handleSearchInput}
+            />
+            <img src={searchIcon} alt="search" className="search-icon" />
+          </div>
+            {/* <input
                 type="text"
                 className="search-bar"
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={handleSearchInput}
-            />
+            /> */}
             <div className='filter-container'>
             {tags.map((tag) => (
                 selectedTags.includes(tag) ?(
