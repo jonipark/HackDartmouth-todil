@@ -36,7 +36,7 @@ const Home = () => {
           { data && data.block.user ? <h1>Hey {data.block.user.first_name}, <br />
             What did you learn today?</h1> : <h1>Hey, <br />
             What did you learn today?</h1>}
-          <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil">✎</span> Add Block</a>
+          <a className="add-block-btn" href="/gems" ><span role="img" aria-label="pencil" style={{marginRight: "16px"}}>✎</span>Add Block</a>
         </div>
       </section>
       {data && data.block && (<section className="bottom-section">

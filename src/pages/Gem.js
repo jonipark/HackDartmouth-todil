@@ -7,7 +7,7 @@ import searchIcon from '../assets/search.png'
 import axios from "axios";
 
 const Gem = () => {
-  const tags = ['Java', 'XR', 'python', 'javascript'];
+  const tags = ["AR/VR", "Java", "Python", "React", "JavaScript", "Node", "Blockchain"];
   const [allTags, setAllTags] = useState(tags);
 
   const [selectedGem, setSelectedGem] = useState(null);

@@ -8,7 +8,7 @@ import digestIcon from '../assets/stats.png';
 import exploreIcon from '../assets/globe.png';
 import userIcon from '../assets/person.png';
 
-const NavBar = () => {
+const NavBar = ({userData}) => {
   return (
     <div className="nav-bar">
       <img src={logo} alt="Logo" className="logo" />
@@ -34,8 +34,14 @@ const NavBar = () => {
       <div className="user-info">
         <img src={userIcon} alt="User" className="nav-icon user-icon" />
         <div className="nav-divider"></div>
-        <span className="user-info-text">Username</span>
-        <span className="user-info-text">User email</span>
+        <span className="user-info-text">Minwoo Choi</span>
+        <span className="user-info-text">minwoo@mtholyoke.edu</span>
+        {/* {userData && (
+          <>
+            <span className="user-info-text">{`${userData.first_name} ${userData.last_name}`}</span>
+            <span className="user-info-text">{userData.email}</span>
+          </>
+        )} */}
       </div>
     </div>
   );
