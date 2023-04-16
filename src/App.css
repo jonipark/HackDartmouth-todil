@@ -19,3 +19,7 @@ body {
     text-align: center;
     margin: auto;
 }
+
+.pd-16 {
+    padding: 16px;
+}
