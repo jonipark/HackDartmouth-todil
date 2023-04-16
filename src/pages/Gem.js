@@ -3,6 +3,7 @@ import './Gem.css';
 import GemList from '../components/Gem/GemList';
 import GemEditor from '../components/Gem/GemEditor';
 import GemViewer from '../components/Gem/GemViewer';
+import searchIcon from '../assets/search.png'
 
 const Gem = () => {
   const tags = ['react', 'react360', 'python', 'javascript'];
