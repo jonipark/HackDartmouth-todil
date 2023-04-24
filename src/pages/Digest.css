@@ -1,116 +1,110 @@
-
 .digest-container {
-    height: 100vh
+  height: 100vh;
 }
 
 .top-digest-bar {
-    background-color: #620FB3;
-    height: 25%;
-    overflow: hidden
+  background-color: #620fb3;
+  height: 25%;
+  overflow: hidden;
 }
 
 .top-digest-bar h2 {
-    padding-left: 2.5%;
-    color: #F4FF6B;
+  padding-left: 2.5%;
+  color: #f4ff6b;
 }
 
 .digest {
-    margin-top: -50px;
-    width: 75%;
-    height: 70%;
-    background-color: #EFEAFF;
-    padding: 2%;
-    border-radius: 8px;
+  margin-top: -50px;
+  width: 75%;
+  height: 80%;
+  background-color: #efeaff;
+  padding: 2%;
+  border-radius: 8px;
 }
 
 .back-btn {
-    float: left;
-    padding-left: 42%;
+  float: left;
+  padding-left: 42%;
 }
 
 .fwd-btn {
-    float: right;
-    padding-right: 42%;
+  float: right;
+  padding-right: 42%;
 }
 
-hr.line{
-    border-top: 2px solid #D6D2E2;
-  }
+hr.line {
+  border-top: 2px solid #d6d2e2;
+}
 
 .stats-text-container {
-    padding-left: 10%;
-    padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .digest-gem-stats {
-    text-align: left;
-    font-size: 28px;
-    font-weight: 200;
-    padding-top: 4%;
-    padding-bottom: 3%;
-    margin-right: 8px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 200;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  margin-right: 8px;
 }
 
 .digest-increase {
-    color: #000;
-    padding: 4px 8px;
-    background-color: #F2FC6D;
-    border-radius: 20px;
-    font-size: 20px;
-    align-items: center;
-    margin-left: 12px;
-    margin-right: 12px;
+  color: #000;
+  padding: 4px 8px;
+  background-color: #f2fc6d;
+  border-radius: 20px;
+  font-size: 20px;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .digest-motivation {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-align: left;
-    font-size: 22px;
-    font-weight: 200;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.tags-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.7%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .digest-top-tags {
-    position: fixed;
-    margin-top: 2.7%;
-    left: 25%;
-    background-color: #F4FF6B;
-    width: 15%;
-    padding: 2%;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-.digest-top-tags li {
-    text-align: left;
-    font-weight: normal;
-    padding-bottom: 3%;
-    font-size: 1.2rem;
+  background-color: #f4ff6b;
+  width: 30%;
+  padding: 3% 3% 0% 3%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .digest-suggestions {
-    position: fixed;
-    margin-top: 2.7%;
-    right: 25%;
-    font-size: 1.5rem;
-    font-weight: 200;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .dtags {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    align-items: flex-end;
-    margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: flex-end;
+  margin-top: 5%;
 }
 
 .dtag {
-    background-color: #7858D2;
-    color: white;
-    padding: 8px;
-    border-radius: 8px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 1rem;
+  background-color: #7858d2;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
