@@ -4,9 +4,9 @@ The question of "What did you gain from your internship?" proved to be more chal
 - [HackDartmouth VIII 🏆 TOP 10](https://devpost.com/software/todil)
 
 ## Screenshots
-<img width="500" alt="Screenshot 2023-04-24 at 9 15 40 PM" src="https://user-images.githubusercontent.com/89917595/234151080-f9d57ab4-9102-424a-b68c-53136ba7e058.png"> <img width="500" alt="Screenshot 2023-04-24 at 9 15 43 PM" src="https://user-images.githubusercontent.com/89917595/234151067-0b5aec7d-b621-40bc-9d27-373283238b12.png">
+<img width="400" alt="Screenshot 2023-04-24 at 9 15 40 PM" src="https://user-images.githubusercontent.com/89917595/234151080-f9d57ab4-9102-424a-b68c-53136ba7e058.png"> <img width="400" alt="Screenshot 2023-04-24 at 9 15 43 PM" src="https://user-images.githubusercontent.com/89917595/234151067-0b5aec7d-b621-40bc-9d27-373283238b12.png">
 
-<img width="500" alt="Screenshot 2023-04-24 at 9 15 48 PM" src="https://user-images.githubusercontent.com/89917595/234151058-17564168-691a-4b10-98cc-1525e9283c2d.png"> <img width="500" alt="Screenshot 2023-04-24 at 9 15 56 PM" src="https://user-images.githubusercontent.com/89917595/234151047-144ac96b-c512-48ef-ae2e-ed95787b1d82.png">
+<img width="400" alt="Screenshot 2023-04-24 at 9 15 48 PM" src="https://user-images.githubusercontent.com/89917595/234151058-17564168-691a-4b10-98cc-1525e9283c2d.png"> <img width="400" alt="Screenshot 2023-04-24 at 9 15 56 PM" src="https://user-images.githubusercontent.com/89917595/234151047-144ac96b-c512-48ef-ae2e-ed95787b1d82.png">
 
 
 ## What it does
