@@ -3,6 +3,10 @@ The question of "What did you gain from your internship?" proved to be more chal
 - [Frontend Demo](https://todil.vercel.app/)
 - [HackDartmouth VIII 🏆 TOP 10](https://devpost.com/software/todil)
 
+
+https://user-images.githubusercontent.com/89917595/234152499-9df1ad4d-21f1-4142-9f7f-501dcae8d638.mp4
+
+
 ## Screenshots
 <img width="400" alt="Screenshot 2023-04-24 at 9 15 40 PM" src="https://user-images.githubusercontent.com/89917595/234151080-f9d57ab4-9102-424a-b68c-53136ba7e058.png"> <img width="400" alt="Screenshot 2023-04-24 at 9 15 43 PM" src="https://user-images.githubusercontent.com/89917595/234151067-0b5aec7d-b621-40bc-9d27-373283238b12.png">
 
@@ -13,6 +17,8 @@ The question of "What did you gain from your internship?" proved to be more chal
 Todil empowers individuals to take control of their own learning and development by tracking their progress in daily learning, reminding them to prioritize their personal growth and skill-building. Todil has a unique recap and weekly digest feature that provides positive feedback and celebrates users' learning, reminding them to prioritize their personal growth and skill-building in a world where AI is increasingly prevalent.
 
 ## How we built it
+<img width="1036" alt="Screenshot 2023-04-24 at 9 28 58 PM" src="https://user-images.githubusercontent.com/89917595/234152518-baab1732-109a-472d-ab5f-a8526d988430.png">
+
 Our primary objective was to develop a framework that could meet the complex requirements of real-world industry applications. To achieve this, we approached the project with a focus on incorporating industry best practices and incorporating modern technology solutions.
 
 One of the key components of our framework is the RESTful API server, which we developed using the popular Spring Boot framework. We chose this technology for its flexibility, ease of use, and robust feature. Additionally, we deployed the API server to Amazon EC2, a scalable and reliable cloud infrastructure that can accommodate our framework's requirements as well as using Amazon RDS for our database.
