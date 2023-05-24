@@ -28,7 +28,7 @@ Another important aspect of our framework is its emphasis on providing a persona
 ## Challenges we ran into
 Integrating a RESTful API with our local frontend development environment (blocked by CORS policy). We addressed this by setting up Access-Control in the Backend
 Deciding on the distribution of responsibilities between frontend and backend for various features
-Accomplishments that we're proud of
+## Accomplishments that we're proud of
 We are proud of building a product focused on helping people prioritize their learning. Furthermore, we are proud of building a full stack web application using an industry level framework within 24 hours. Moreover, we successfully integrated ChatGPT to offer users inspiring messages in their Weekly Digest.
 
 ## What we learned
