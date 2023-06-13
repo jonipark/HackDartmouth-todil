@@ -1,7 +1,7 @@
 ## Inspiration
 The question of "What did you gain from your internship?" proved to be more challenging to answer than I initially thought. While I undoubtedly acquired knowledge, I couldn't pinpoint a specific “gem” of knowledge. As a result of this realization, I decided to start recording my daily learnings and created Todil, a tool that simplifies the process of documenting and organizing my entries, and helps me keep track of my ongoing education.
 
-### Continuing as a side project
+### Continuing as a side project ✨
 - [www.todil.net](https://www.todil.net/)
 
 ### For Hackathon
